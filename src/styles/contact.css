@@ -1,0 +1,12 @@
+.cyber-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.8;
+}
+
+.cyber-input:focus {
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+.cyber-input {
+  transition: all 0.3s ease;
+}

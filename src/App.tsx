@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
+import Navbar from './components/Navbar';
+import AppRoutes from './routes/AppRoutes';
+import { AnimatePresence } from 'framer-motion';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ThemeProvider>
+        <div className="min-h-screen" style={{ overflow: 'hidden' }}>
+          <Navbar />
+          <AnimatePresence mode="wait">
+            <main className="pt-16">
+              <AppRoutes />
+            </main>
+          </AnimatePresence>
+        </div>
+      </ThemeProvider>
+    </Router>
   );
-}
+};
 
 export default App;
