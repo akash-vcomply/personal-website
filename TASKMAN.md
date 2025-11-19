@@ -6,6 +6,7 @@
 
 <h1 align="center">🚀 TaskMan</h1>
 <p align="center"><b>Your personal task companion => designed to capture, plan, schedule, and organize everything that crosses your mind.</b></p>
+
 ## By [@akash-vcomply](https://akash-vcomply.github.io/personal-website/)
 
 # 🚀 TaskMan
